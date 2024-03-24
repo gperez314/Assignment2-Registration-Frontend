@@ -1,0 +1,181 @@
+/*
+Name: Assignement2
+Course Code: SODV1201
+Class: Introduction to Web Programming
+Author: Glenn Perez
+*/
+
+/* ============================================================================================ */
+/* Colors and variables */
+/* ============================================================================================ */
+:root {
+    --backgrounColor: rgb(41, 41, 41);
+    --color1: rgb(255, 220, 18);
+    --color2: rgb(191, 191, 191);
+    --color3: white;
+}
+
+.coloredText1 {
+    color: var(--color1)
+}
+
+.coloredText2 {
+    color: var(--color2)
+}
+
+.coloredText3 {
+    color: var(--color3)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ============================================================================================ */
+/* Style for body */
+/* ============================================================================================ */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    background-color: var(--backgrounColor);
+}
+
+/* ============================================================================================ */
+/* Special styling for smaller screens */
+/* ============================================================================================ */
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* ============================================================================================ */
+/* Styles for Title*/
+/* ============================================================================================ */
+#headerContainer {
+    height: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ============================================================================================ */
+/* Styles for Footer */
+/* ============================================================================================ */
+#footerDiv {
+    display: block;
+    height: 30px;
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ============================================================================================ */
+/* Styles for Registration */
+/* ============================================================================================ */
+#Container {
+    justify-content: center;
+    text-align: left;
+    height: calc(100vh - 120px);
+}
+
+#registrationDiv {
+    padding: 20px;
+    width: min(400px, 80vw);
+    margin: auto;
+}
+
+#formLegend {
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+.formfield {
+    margin: 5px 20px;
+    width: min(410px, calc(80vw - 40px));
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.formfieldlabel {
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+#registerBtnDiv {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+#register {
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    background: var(--color1);
+    border: 1px solid var(--color1);
+    height: 36px;
+    width: 150px;
+    margin: 20px;
+    padding: 0 6px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+}
+
+#register:hover {
+    background: #F7CA00;
+    border-color: #F2C200;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
+
+/* ============================================================================================ */
+/* Styles User Confirmation Page */
+/* ============================================================================================ */
+
+.registrationResults {
+    padding: 5px;
+    font-size: 1.2em;
+    color: var(--color1);
+}
+
+#registrationResultsDiv {
+    width: min(300px, 80vw);
+    margin: auto;
+    padding-top: 20px;
+    text-align: left;
+}
+
+#confirmBtnDiv {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+#confirm{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    background: var(--color1);
+    border: 1px solid var(--color1);
+    height: 36px;
+    width: 150px;
+    margin: 20px;
+    padding: 0 6px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+}
+
+#confirm:hover {
+    background: #F7CA00;
+    border-color: #F2C200;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}

@@ -1,0 +1,87 @@
+<!-- 
+Name: Assignement2
+Course Code: SODV1201
+Class: Introduction to Web Programming
+Author: Glenn Perez
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 | Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header id="headerContainer">
+        <h1 id="title" class="coloredText1">BVC Sport Club Event Registration</h1>
+    </header>
+    <!-- Registration Page Main Content -->
+    <main id="Container">
+
+        <div id="registrationDiv">
+            <!-- Registration Form -->
+            <form action="http://localhost:7000/register" method="post">
+                <fieldset>
+                    <legend id="formLegend" class="coloredText1"><b>Registration Form:</b></legend>
+                    <table>
+                        <tr>
+                            <td><label for="idNo" class="coloredText3 formfieldlabel">ID*</label></td>
+                        </tr>
+                        <tr>
+                            <td><input name="idNo" type="text" id="idNumber" class="formfield"
+                                    oninvalid="setCustomValidity('Please enter numeric values only')"  pattern="[0-9]*"
+                                    oninput="setCustomValidity('')" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="name" class="coloredText3 formfieldlabel">Full Name*</label></td>
+                        </tr>
+                        <tr>
+                            <td><input name="name" type="text" id="idName" class="formfield"
+                                    oninvalid="setCustomValidity('Please enter name')" oninput="setCustomValidity('')"
+                                    required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address" class="coloredText3 formfieldlabel">Address*</label></td>
+                        </tr>
+                        <tr>
+                            <td><input name="address" type="text" id="idAddress" class="formfield"
+                                    oninvalid="setCustomValidity('Please enter address')"
+                                    oninput="setCustomValidity('')" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="idRating" class="coloredText3 formfieldlabel">Status</label>
+                                <select name="status" id="status" class="formfield">
+                                    <option value="student">Student</option>
+                                    <option value="staff">Staff</option>
+                                    <option value="volunter">Volunteer</option>
+                                </select>
+                            </td>
+                        </tr>
+                            <td id="registerBtnDiv"><input type="submit" value="Register" id="register"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <!-- Page Footer -->
+    <footer>
+        <div id="footerDiv" class="coloredText2">Submitted by:
+            <span class="coloredText1">Glenn Perez</span> | Date: <span id="date" class="coloredText1"></span> |
+            Copyright:
+            <span class="coloredText1">&copy 2024</span>
+        </div>
+    </footer>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
