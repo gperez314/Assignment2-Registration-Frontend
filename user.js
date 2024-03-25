@@ -13,7 +13,7 @@ import {
 SetDate(); // Set current date on footer
 
 // Get user confimation data from backend
-fetch('http://localhost:7000/user')
+fetch('https://assignment2-registration-backend.onrender.com/user')
     .then((response) => response.json())
     .then((data) => {
         console.log(data)
